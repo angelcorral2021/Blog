@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Cibersegurid Chile">
 	<main>
 		<svg
 			class="astro-a"
@@ -33,33 +35,33 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
+		<Header />
+		<h1>Ciberseguridad <span class="text-gradient">Chile</span></h1>
+		
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				title="Ultimos ataques"
+				body="Noticias de los ultimos ataques conocidos y noticias relacionadas."
 			/>
 			<Card
 				href="https://astro.build/integrations/"
-				title="Integrations"
+				title="Articulos"
 				body="Supercharge your project with new frameworks and libraries."
 			/>
 			<Card
 				href="https://astro.build/themes/"
-				title="Themes"
+				title="Herramientas"
 				body="Explore a galaxy of community-built starter themes."
 			/>
 			<Card
 				href="https://astro.build/chat/"
-				title="Community"
+				title="Communidad"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+		<br>
+		<Nav />
 	</main>
 </Layout>
 
